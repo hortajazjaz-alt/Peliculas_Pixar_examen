@@ -1,0 +1,44 @@
+[2023-10-27 10:00:00]
+Description: Leer archivos de guías y requisitos.
+Prompt: Lee los siguientes archivos:
+guidelines pelicula
+pelicula (pdf)
+requisitos
+
+[2023-10-27 10:05:00]
+Description: Leer project_context.md y explicar lo entendido.
+Prompt: lee el archivo "project_context.md" y dime que es lo que entiendes
+
+[2023-10-27 10:10:00]
+Description: Organizar carpetas y crear archivos base (navigation, screens) según la estructura solicitada.
+Prompt: antes de que sigas leyendo los archivos que te pedire que leas, ayudame a tener un orden en mis carpetas así:└── src/main/java/.../
+    ├── MainActivity.kt
+    ├── navigation/
+    │   └── AppNavigation.kt       ← Define el NavHost y las rutas
+    ├── screens/
+    │   ├── HomeScreen.kt          ← Pantalla principal de selección
+    │   └── DetailScreen.kt        ← Pantalla con detalle personajes
+    └── ui/theme/                  ← Tema generado por defecto
+
+[2023-10-27 10:15:00]
+Description: Lectura de requerimientos y plan de implementación. Forzar modo Landscape y creación de HomeScreen.
+Prompt: Muy bien, yo eh terminado de poner los requerimientos, lee los archivos Project_context.md y requeriments.md y entremos en acción
+
+[2023-10-27 10:20:00]
+Description: Refinar HomeScreen con el diseño de "Solitario" y Grid de 5 columnas para cumplir con el scroll en Landscape.
+Prompt: genera la pantalla de selección con un LazyVerticalGrid de 3 o 4 columnas. Crea una lista con 10 películas de Pixar para que se formen al menos 3 filas y se active el scroll vertical obligatoriamente. Cada tarjeta dentro del grid debe mantener la estética visual de mi boceto (estilo carta flotante con marco blanco y sombras).
+
+[2023-10-27 10:30:00]
+Description: Implementar DetailScreen con filtrado por película y mejora de calidad de imagen.
+Prompt: A cada pelicula se le asignarán sus personajes correspondientes, sin que tengan personajes que no son propios de sus peliculas. y la foto de portada en home screen debe dejar de ser pixeleada.
+
+[2023-10-27 10:40:00]
+Description: Solucionar pixelado de imágenes usando FilterQuality.High y carga optimizada de recursos.
+Prompt: Quiero solucionar el problema de mejor visualizacion de las imagenes, se ven pixeleadas
+
+[2023-10-27 11:15:00]
+Description: Revertir a 8 películas, eliminar secciones de galería/miniaturas en DetailScreen y optimizar nitidez de imágenes.
+Prompt: Detalles a cambiar:
+Dejar las 8 peliculas que ya estaban establecidas
+Quitar la miniatura de la izquierda inferior debajo de la descripcion del personaje
+Mejorar la vibilidad de la imagen de las cartas, se ven pixeleadas,
